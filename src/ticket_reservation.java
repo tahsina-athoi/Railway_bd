@@ -362,7 +362,7 @@ public class ticket_reservation extends javax.swing.JFrame {
         String tot = total.getText();
 
         try {
-            PreparedStatement ps = con.prepareStatement("insert into ticket_info(user_no, user_Name, start, destination, trainNo, trainName, price, date, tickets, total) values(?,?,?,?,?,?,?,?,?,?);");
+            PreparedStatement ps = con.prepareStatement("insert into ticket_info(user_no, user_Name, start, destination, trainNo, train_Name, price, date, tickets, total) values(?,?,?,?,?,?,?,?,?,?);");
             ps.setString(1, uno);
             ps.setString(2, name);
             ps.setString(3, fromp);
